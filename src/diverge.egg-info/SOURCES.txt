@@ -1,0 +1,13 @@
+pyproject.toml
+src/diverge/__init__.py
+src/diverge/adapters.py
+src/diverge/core.py
+src/diverge/match.py
+src/diverge.egg-info/PKG-INFO
+src/diverge.egg-info/SOURCES.txt
+src/diverge.egg-info/dependency_links.txt
+src/diverge.egg-info/entry_points.txt
+src/diverge.egg-info/requires.txt
+src/diverge.egg-info/top_level.txt
+tests/test_core.py
+tests/test_match.py

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diverge"
+version = "0.1.0"
+description = "LLM differential tester — find inputs where two models disagree maximally"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+semantic = ["sentence-transformers>=3.0"]
+openai = ["openai>=1.0"]
+anthropic = ["anthropic>=0.20"]
+dev = ["pytest>=8", "pytest-cov"]
+
+[project.scripts]
+diverge = "diverge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["diverge"]

@@ -1,0 +1,14 @@
+numpy>=1.26
+
+[anthropic]
+anthropic>=0.20
+
+[dev]
+pytest>=8
+pytest-cov
+
+[openai]
+openai>=1.0
+
+[semantic]
+sentence-transformers>=3.0
