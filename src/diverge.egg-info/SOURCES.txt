@@ -1,6 +1,7 @@
 pyproject.toml
 src/diverge/__init__.py
 src/diverge/adapters.py
+src/diverge/cli.py
 src/diverge/core.py
 src/diverge/diff.py
 src/diverge/match.py

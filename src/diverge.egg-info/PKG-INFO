@@ -5,6 +5,8 @@ Summary: LLM differential tester — find inputs where two models disagree maxim
 Requires-Python: >=3.10
 Requires-Dist: numpy>=1.26
 Requires-Dist: scipy>=1.12
+Requires-Dist: click>=8.1
+Requires-Dist: rich>=13.0
 Provides-Extra: semantic
 Requires-Dist: sentence-transformers>=3.0; extra == "semantic"
 Provides-Extra: openai
