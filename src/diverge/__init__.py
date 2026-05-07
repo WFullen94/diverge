@@ -21,6 +21,12 @@ from diverge.match import (
     semantic_similarity,
 )
 
+from diverge.diff import (
+    PromptDiffResult,
+    prompt_diff,
+    measure_baseline,
+)
+
 from diverge.perturb import (
     PerturbedPrompt,
     perturb,
@@ -44,6 +50,9 @@ from diverge.adapters import (
 
 __all__ = [
     "PromptResult",
+    "PromptDiffResult",
+    "prompt_diff",
+    "measure_baseline",
     "PerturbedPrompt",
     "perturb",
     "PERTURBATION_LEVELS",
