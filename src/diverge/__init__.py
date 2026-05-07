@@ -21,6 +21,19 @@ from diverge.match import (
     semantic_similarity,
 )
 
+from diverge.perturb import (
+    PerturbedPrompt,
+    perturb,
+    PERTURBATION_LEVELS,
+)
+
+from diverge.search import (
+    DivergenceCandidate,
+    SearchResult,
+    AdversarialSearchResult,
+    find_divergence_inputs,
+)
+
 from diverge.adapters import (
     ModelAdapter,
     OpenAIAdapter,
@@ -31,6 +44,13 @@ from diverge.adapters import (
 
 __all__ = [
     "PromptResult",
+    "PerturbedPrompt",
+    "perturb",
+    "PERTURBATION_LEVELS",
+    "DivergenceCandidate",
+    "SearchResult",
+    "AdversarialSearchResult",
+    "find_divergence_inputs",
     "DivergenceResult",
     "diverge",
     "exact_match",
